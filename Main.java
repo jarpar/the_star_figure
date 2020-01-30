@@ -13,11 +13,9 @@ class Main {
             }
         }
         for (int i = 0; i < n; i++) {
+            matrix[i][i] = '*';
             matrix[mid][i] = '*';
             matrix[i][mid] = '*';
-        }
-        for (int i = 0; i < n; i++) {
-            matrix[i][i] = '*';
         }
         int count = n;
         for (int i = 0; i < n; i++) {
